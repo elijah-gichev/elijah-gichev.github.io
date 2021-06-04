@@ -30,10 +30,10 @@
 .pub-cache/
 .pub/
 
-/build/
+/build/*
 # исключить из игнора папку с содержимым
-#!build/web
-#!build/web/*
+!build/web
+!build/web/*
 
 
 # Web related
