@@ -32,7 +32,7 @@
 
 /build/*
 # исключить из игнора папку с содержимым
-!/build/web/*
+!/build/web
 
 # Web related
 lib/generated_plugin_registrant.dart
