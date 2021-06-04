@@ -46,4 +46,4 @@ app.*.map.json
 /android/app/release
 
 # исключить из игнора папку с содержимым
-!build/web/
+!/build/web/
