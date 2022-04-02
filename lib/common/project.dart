@@ -11,16 +11,22 @@ class ProjectItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      padding: EdgeInsets.only(bottom: 50),
       height: 20.h,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Container(
-            padding: EdgeInsets.only(bottom: 50),
-            width: 50.w,
+            width: 80.w,
             child: Container(
-              color: backgroundColor,
+              decoration: BoxDecoration(
+                color: backgroundColor,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(10),
+                  bottomRight: Radius.circular(10),
+                ),
+              ),
               alignment: Alignment.center,
               child: AnimatedTextKit(
                 repeatForever: true,
@@ -31,7 +37,7 @@ class ProjectItem extends StatelessWidget {
                     textAlign: TextAlign.center,
                     textStyle: const TextStyle(
                       fontWeight: FontWeight.w500,
-                      fontSize: 62,
+                      fontSize: 60,
                     ),
                     speed: const Duration(milliseconds: 200),
                   ),
@@ -43,10 +49,46 @@ class ProjectItem extends StatelessWidget {
             color: Colors.white,
             width: 50.w,
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 2.w),
               child: Center(
                 child: Text(
                   project.description,
                 ),
+              ),
+            ),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              color: backgroundColor,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(10),
+                bottomLeft: Radius.circular(10),
+              ),
+            ),
+            width: 50.w,
+            child: Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  SizedBox(height: 5.h),
+                  ...List.generate(
+                    project.features.length,
+                    (index) {
+                      return Container(
+                        padding: EdgeInsets.only(bottom: 2.h),
+                        child: Text(
+                          project.features[index],
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
+                        ),
+                      );
+                    },
+                  )
+                ],
               ),
             ),
           ),

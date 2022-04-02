@@ -8,7 +8,10 @@ class ProjectRepository {
       project: Project(
         title: "Pet911",
         description: "Приложение для поиска домашних животных",
-        features: [],
+        features: [
+          "Продвинутая работа карты",
+          "Вложенная навигация",
+        ],
       ),
       mainColor: Colors.lightGreen,
     ),

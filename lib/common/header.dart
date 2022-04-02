@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bio/repository/projects_repository.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Header extends StatelessWidget implements PreferredSizeWidget {
   final void Function(int) onActionTap;
@@ -32,7 +31,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
             final projectView = ProjectRepository.projects[index];
             return Container(
               padding: EdgeInsets.symmetric(
-                horizontal: 20,
+                horizontal: 1.w,
               ),
               alignment: Alignment.centerRight,
               child: TextButton(

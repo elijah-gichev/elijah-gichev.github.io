@@ -21,6 +21,7 @@ class _MainPageState extends State<MainPage> {
       appBar: Header(
         onActionTap: _scrollToIndex,
       ),
+      backgroundColor: Colors.white,
       body: PageView(
         controller: pageController,
         scrollDirection: Axis.vertical,
