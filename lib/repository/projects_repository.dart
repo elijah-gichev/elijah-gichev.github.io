@@ -14,6 +14,7 @@ class ProjectRepository {
         ],
       ),
       mainColor: Colors.lightGreen,
+      inverseColor: Colors.white,
     ),
     ProjectView(
       project: Project(
@@ -22,6 +23,7 @@ class ProjectRepository {
         features: [],
       ),
       mainColor: Colors.yellow,
+      inverseColor: Colors.black,
     ),
     ProjectView(
       project: Project(
@@ -30,6 +32,7 @@ class ProjectRepository {
         features: [],
       ),
       mainColor: Colors.indigoAccent,
+      inverseColor: Colors.white,
     ),
     ProjectView(
       project: Project(
@@ -38,6 +41,7 @@ class ProjectRepository {
         features: [],
       ),
       mainColor: Colors.white60,
+      inverseColor: Colors.black,
     ),
   ];
 }

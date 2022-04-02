@@ -33,6 +33,7 @@ class _MainPageState extends State<MainPage> {
             return ProjectItem(
               project: projectView.project,
               backgroundColor: projectView.mainColor,
+              toButtonColor: projectView.inverseColor,
             );
           },
         ),
