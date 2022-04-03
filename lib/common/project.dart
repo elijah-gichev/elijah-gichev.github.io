@@ -86,16 +86,23 @@ class ProjectItem extends StatelessWidget {
               ),
             ),
           ),
+          // Container(
+          //   color: Colors.white,
+          //   width: 50.w,
+          //   child: Container(
+          //     padding: EdgeInsets.symmetric(horizontal: 2.w),
+          //     child: Center(
+          //       child: Text(
+          //         project.description,
+          //       ),
+          //     ),
+          //   ),
+          // ),
           Container(
             color: Colors.white,
-            width: 50.w,
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 2.w),
-              child: Center(
-                child: Text(
-                  project.description,
-                ),
-              ),
+            //width: 50.w,
+            child: Image.asset(
+              "assets/icons/pet911.png",
             ),
           ),
           Container(
